@@ -23,5 +23,15 @@
 \setbeamerfont{block title}{size=\large}
 \setbeamertemplate{itemize subitem}[triangle]
 \setbeamercolor{titlelike}{parent=structure,bg=white!85!MSUgreen}
+
+\setbeamercolor{yellowuppercol}{fg=yellow!20!white, bg=black}
+\setbeamercolor{yellowlowercol}{fg=black, bg=yellow!20!white}
+\newenvironment<>{yellowbox}[1]{%
+      \begin{beamerboxesrounded}[shadow=true, upper=yellowuppercol, lower=yellowlowercol]{#1}
+#2
+}
+{
+\end{beamerboxesrounded}}
+
 \mode
 <all>
