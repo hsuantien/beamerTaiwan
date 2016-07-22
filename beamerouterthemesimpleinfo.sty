@@ -1,14 +1,11 @@
-% Copyright 2007 by Till Tantau
-%
+% Copyright 2016 by Hsuan-Tien Lin <htlin@csie.ntu.edu.tw>
 % This file may be distributed and/or modified
 %
 % 1. under the LaTeX Project Public License and/or
 % 2. under the GNU Public License.
-%
-% See the file doc/licenses/LICENSE for more details.
 
-\ProvidesPackageRCS $Header: /Users/joseph/Documents/LaTeX/beamer/base/themes/outer/beamerouterthemeinfolines.sty,v 51a8c72084af 2012/10/16 20:17:59 joseph $
-
+%% This part modified from beamerouterthemeinfolines.sty
+% Copyright 2007 by Till Tantau
 
 \mode<presentation>
 
@@ -19,33 +16,40 @@
 \setbeamercolor*{section in head/foot}{parent=palette tertiary}
 \setbeamercolor*{subsection in head/foot}{parent=palette primary}
 
-\defbeamertemplate*{footline}{infolines theme}
+\setbeamercolor*{section in head}{parent=palette tertiary, bg=}
+\setbeamercolor*{subsection in head}{parent=palette primary, bg=}
+
+\setbeamercolor*{section in toc}{parent=palette primary, bg=}
+\setbeamercolor*{subsection in toc}{parent=palette primary, bg=}
+
+\setbeamertemplate{enumerate items}[circle]
+
+\defbeamertemplate*{footline}{simpleinfo theme}
 {
   \leavevmode%
   \hbox{%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
     \usebeamerfont{author in head/foot}\insertshortauthor\expandafter\beamer@ifempty\expandafter{\beamer@shortinstitute}{}{~~(\insertshortinstitute)}
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+  \begin{beamercolorbox}[wd=.65\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
     \usebeamerfont{title in head/foot}\insertshorttitle
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
-    \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  \begin{beamercolorbox}[wd=.05\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{author in head/foot} \insertframenumber/\inserttotalframenumber
   \end{beamercolorbox}}%
   \vskip0pt%
 }
 
-\defbeamertemplate*{headline}{infolines theme}
+\defbeamertemplate*{headline}{simpleinfo theme}
 {
   \leavevmode%
   \hbox{%
-  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.65ex,dp=1.5ex,right]{section in head/foot}%
-    \usebeamerfont{section in head/foot}\insertsectionhead\hspace*{2ex}
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.65ex,dp=1.5ex,left]{subsection in head/foot}%
-    \usebeamerfont{subsection in head/foot}\hspace*{2ex}\insertsubsectionhead
+  \begin{beamercolorbox}[wd=1.0\paperwidth,ht=2ex,dp=1.5ex,left]{section in head/foot}%
+    \usebeamerfont{section in head}\hspace*{2ex}\insertsectionhead\hspace*{1cm}\textit{\insertsubsectionhead}%
   \end{beamercolorbox}}%
+%  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2ex,dp=1.5ex,left]{subsection in head/foot}%
+%    \usebeamerfont{subsection in head}\hspace*{1ex}\insertsubsectionhead
+%  \end{beamercolorbox}}%
   \vskip0pt%
 }
 
