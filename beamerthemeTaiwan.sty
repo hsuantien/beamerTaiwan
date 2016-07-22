@@ -1,17 +1,17 @@
-% Copyright 2007 by Till Tantau for beamerthemeBerlin.sty
-\DeclareOptionBeamer{compress}{\beamer@compresstrue}
-\ProcessOptionsBeamer
-
-% Copyright 2012 by Alan Munn <amunn@msu.edu>  Modified for MSU colours for beamerthemeEastLansing.sty
-% Copyright 2004 by Madhusudan Singh <madhusudan.singh@gmail.com>
-%
+% Copyright 2016 by Hsuan-Tien Lin <htlin@csie.ntu.edu.tw>
 % This file may be distributed and/or modified
 %
 % 1. under the LaTeX Project Public License and/or
 % 2. under the GNU Public License.
-%
-% See the file doc/licenses/LICENSE for more details.
 
+%% This part modified from beamerthemeBerlin.sty
+% Copyright 2007 by Till Tantau
+\DeclareOptionBeamer{compress}{\beamer@compresstrue}
+\ProcessOptionsBeamer
+
+%% This part modified from beamerthemeEastLansing.sty
+% Copyright 2012 by Alan Munn <amunn@msu.edu>  Modified for MSU colours
+% Copyright 2004 by Madhusudan Singh <madhusudan.singh@gmail.com>
 \mode<presentation>
 
 \useinnertheme{rounded}
@@ -20,6 +20,7 @@
 \usecolortheme{grass}
 \setbeamerfont{block title}{size=\large}
 \setbeamertemplate{itemize subitem}[triangle]
+%% end of modification from beamerthemeEastLansing.sty
 
 %% This part modified from beamerthemeSingapore.sty
 % Copyright 2007 by Till Tantau
@@ -38,7 +39,7 @@
 }
 
 \addtoheadtemplate{\pgfuseshading{beamer@headfade}\vskip-2cm}{}
-%%end of modification
+%% end of modification from beamerthemeSingapore.sty
 
 %adjust title
 \setbeamertemplate{frametitle}
@@ -50,7 +51,7 @@
   \vspace*{-3ex}
 }
 
-%%personal preferences of Hsuan-Tien Lin
+%% personal preferences of Hsuan-Tien Lin
 \setbeamertemplate{navigation symbols}{}
 \setbeamercovered{invisible}
 \setbeamertemplate{section in toc}[sections unnumbered]
@@ -66,6 +67,8 @@
 }
 {
 \end{beamerboxesrounded}}
+%% end of personal preferences of Hsuan-Tien Lin
 
 \mode
 <all>
+%% end of modification from beamerthemeBerlin.sty
