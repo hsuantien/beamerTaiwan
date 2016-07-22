@@ -14,11 +14,15 @@
 \definecolor{TWNgreen}{cmyk}{0.9, 0, 1, 0}
 % Approximate match for Taiwan colour
 
-\setbeamercolor{alerted text}{fg=TWNgreen!80!white}
-\setbeamercolor*{palette primary}{fg=TWNgreen!60!black,bg=white!85!TWNgreen}
-\setbeamercolor*{palette secondary}{fg=TWNgreen!70!black,bg=white!60!TWNgreen}
-\setbeamercolor*{palette tertiary}{bg=TWNgreen!80!black,fg=white!50!TWNgreen}
-\setbeamercolor*{palette quaternary}{fg=TWNgreen,bg=white!20!TWNgreen}
+\usecolortheme[named=TWNgreen]{structure}%
+
+\setbeamercolor{alerted text}{fg=red}%
+\setbeamercolor{example text}{fg=yellow!70!black}%
+
+\setbeamercolor*{palette primary}{fg=TWNgreen!40!black,bg=}%
+\setbeamercolor*{palette secondary}{fg=TWNgreen!70!black,bg=white!60!TWNgreen}%
+\setbeamercolor*{palette tertiary}{fg=TWNgreen!80!black,bg=TWNgreen!25!white}%
+\setbeamercolor*{palette quaternary}{fg=TWNgreen,bg=white!20!TWNgreen}%
 
 \setbeamercolor*{sidebar}{fg=TWNgreen,bg=TWNgreen!75!white}
 
@@ -27,9 +31,9 @@
 \setbeamercolor*{palette sidebar tertiary}{fg=TWNgreen!50!black}
 \setbeamercolor*{palette sidebar quaternary}{fg=white!10!TWNgreen}
 
-\setbeamercolor*{titlelike}{parent=palette primary}
-\setbeamercolor{frametitle}{bg=white!90!TWNgreen}
-\setbeamercolor{frametitle right}{bg=white!60!TWNgreen}
+\setbeamercolor*{titlelike}{parent=palette primary}%
+\setbeamercolor{frametitle}{bg=}%
+\setbeamercolor{frametitle right}{bg=}%
 
 \setbeamercolor*{separation line}{}
 \setbeamercolor*{fine separation line}{}
