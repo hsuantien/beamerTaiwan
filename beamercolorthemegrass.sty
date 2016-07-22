@@ -1,14 +1,12 @@
-% Copyright 2012 by Alan Munn <amunn@msu.edu>  Modified for MSU colours for beamercolorthemespruce.sty
-% Copyright 2004 by Madhusudan Singh <madhusudan.singh@gmail.com>
-%
+% Copyright 2016 by Hsuan-Tien Lin <htlin@csie.ntu.edu.tw>
 % This file may be distributed and/or modified
 %
 % 1. under the LaTeX Project Public License and/or
 % 2. under the GNU Public License.
-%
-% See the file doc/licenses/LICENSE for more details.
-%
 
+%% This part modified from beamercolorthemespruce.sty
+% Copyright 2012 by Alan Munn <amunn@msu.edu>  Modified for MSU colours for beamercolorthemespruce.sty
+% Copyright 2004 by Madhusudan Singh <madhusudan.singh@gmail.com>
 \mode<presentation>
 
 \definecolor{TWNgreen}{cmyk}{0.9, 0, 1, 0}
@@ -38,5 +36,16 @@
 \setbeamercolor*{separation line}{}
 \setbeamercolor*{fine separation line}{}
 \setbeamercolor{block body}{parent=normal text,use=block title,bg=red!0,fg=}
+
+%% This part modified from beamercolorthemeorchid.sty
+% Copyright 2007 by Till Tantau
+\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
+\setbeamercolor{block title alerted}{use=alerted text,fg=white,bg=alerted text.fg!75!black}
+\setbeamercolor{block title example}{use=example text,fg=white,bg=example text.fg!75!black}
+
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+\setbeamercolor{block body alerted}{parent=normal text,use=block title alerted,bg=block title alerted.bg!10!bg}
+\setbeamercolor{block body example}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
+
 \mode
 <all>
