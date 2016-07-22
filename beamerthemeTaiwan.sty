@@ -41,6 +41,16 @@
 \addtoheadtemplate{\pgfuseshading{beamer@headfade}\vskip-2cm}{}
 %%end of modification
 
+%adjust title
+\setbeamertemplate{frametitle}
+{
+  \vspace*{-2ex}
+  \begin{center}
+    \vbox{\strut\insertframetitle\strut}
+  \end{center}
+  \vspace*{-3ex}
+}
+
 %%personal preferences of Hsuan-Tien Lin
 \setbeamertemplate{navigation symbols}{}
 \setbeamercovered{invisible}
