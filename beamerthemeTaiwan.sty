@@ -22,6 +22,25 @@
 \setbeamertemplate{itemize subitem}[triangle]
 \setbeamercolor{titlelike}{parent=structure,bg=white!85!MSUgreen}
 
+%% This part modified from beamerthemeSingapore.sty
+% Copyright 2007 by Till Tantau
+\AtBeginDocument{%
+  {
+    \usebeamercolor{section in head/foot}
+  }
+  
+  \pgfdeclareverticalshading{beamer@headfade}{\paperwidth}
+  {%
+    color(0cm)=(bg);
+    color(2cm)=(section in head/foot.bg)%
+  }
+
+  \setbeamercolor{section in head/foot}{bg=}
+}
+
+\addtoheadtemplate{\pgfuseshading{beamer@headfade}\vskip-2cm}{}
+%%end of modification
+
 %%personal preferences of Hsuan-Tien Lin
 \setbeamertemplate{navigation symbols}{}
 \setbeamercovered{invisible}
